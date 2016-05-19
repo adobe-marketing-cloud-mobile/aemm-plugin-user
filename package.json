@@ -1,0 +1,27 @@
+{
+  "name": "aemm-plugin-user",
+  "version": "1.2.1",
+  "description": "AEMM User Plugin",
+  "cordova": {
+    "id": "aemm-plugin-user",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adobe-marketing-cloud-mobile/aemm-plugin-user.git"
+  },
+  "keywords": [
+    "cordova",
+    "user",
+    "cordova-ios",
+    "cordova-android",
+    "aem",
+    "aemm",
+    "aemmobile"
+  ],
+  "author": "Adobe",
+  "license": "Apache 2.0"
+}
