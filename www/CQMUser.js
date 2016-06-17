@@ -139,6 +139,23 @@ CQMUser.prototype.refreshSignIn = function(successCallback, errorCallback) {
     exec(successCallback, fail, "CQMUser", "refreshSignIn", []);
 };
 
-
+/**
+ * Set Authentication Token
+ *
+ * @param {Function} the authentication token
+ * @param {Function} successCallback The function to call when refresh is complete
+ * @param {Function} errorCallback The function to call when there was an error refreshing signin info (OPTIONAL)
+ */
+CQMUser.prototype.setAuthToken = function(authToken, successCallback, errorCallback) {
+    if (typeof authToken === "undefined") {
+        errorCallback && errorCallback(new CQMUserError(CQMUserError.INVALID_ARGUMENT_ERROR));
+        return;
+    }
+    var fail = errorCallback && function(code) {
+        var ce = new CQMUserError(code);
+        errorCallback(ce);
+    };
+    exec(successCallback, fail, "CQMUser", "setAuthToken", [authToken]);
+};
 
 module.exports = new CQMUser();
