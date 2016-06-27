@@ -20,6 +20,10 @@
 -->
 # Release Notes
 
+## 1.3.0 (Jun 27, 2016)
+* Add setAuthToken
+* Add Unauthorized error
+
 ### 1.2.1 (May 19, 2016)
 * initial public release
 
